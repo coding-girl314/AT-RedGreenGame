@@ -1,0 +1,319 @@
+
+
+
+
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+/*navigation bar*/
+
+.nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 38px;
+    color: black;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.555);
+    
+    
+}
+
+.nav-wrapper > .left-nav > div{
+    margin-right: 20px;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.nav-wrapper > .right-nav > div{
+    margin-right: 20px;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.left-nav{
+    display: flex;
+}
+
+.nav-link-wrapper{
+    height: 40px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom  0.5s;
+}
+
+.nav-link-wrapper a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+
+}
+
+.active-nav-link{
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+    color: black !important;
+}
+
+
+/*button styles*/
+.button-container{
+    display: flex;
+    flex-direction: row;
+    padding: 38px;
+}
+button{
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    background-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    text-decoration: none;
+    margin-left: 14px;
+    margin-right: 14px
+
+}
+
+.start-button > button:hover{
+    transition: color .5s;
+    color: lightgreen;
+}
+.stop-button > button:hover{
+    transition: color .5s;
+    color: red;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*#next {
+  position: relative;
+  margin-top: 30px;
+  display: inline-block;
+  
+  height: 100%;
+}
+#holiday {
+  position: relative;
+  margin-top: 30px;
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+}
+#question {
+   border: 10px solid black;
+}
+#center-button {
+   text-align: center;
+   
+}*/
+/*home styles */
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+    justify-content: center;
+    align-items: center;
+    margin: auto
+}
+
+.home-container > .text-link > a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid transparent;
+    height: 22px;
+    
+}
+
+.home-container > .text-link:hover{
+    transition: border-bottom .5s;
+    border-bottom: 1px solid black;
+}
+
+.home-container > a{
+    margin-top: 50px;
+}
+
+/* lights */ 
+
+div.elements-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.elements-container > img {
+    margin: 20px;
+}
+
+/*games page styles*/
+.games-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game-styles-wrapper{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+
+}
+.games-img-background {
+    height: 200px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-size: cover; /* crops the images of different sizes so they sit next to each other*/
+    background-position: center;
+    align-content: center;
+    justify-content: center;
+
+    border: 8px solid transparent;
+    transition: border 0.5s;
+}
+
+.img-text{
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    top: 130px;
+    color: white;
+}
+
+.games-img-background:hover{
+    border-bottom-color: #a57ace;
+    border-right-color:  #a57ace;
+    
+}
+
+/* banner styles*/
+.close-announcement{
+    font-size: 3vh;
+    color: white;
+    transition: 0.2s ease;
+    cursor: pointer;
+    width: 1.5vh;
+    margin-left: 20%;
+}
+
+.announcement-banner{
+    background-color: #a57ace;
+    width: 100%;
+    height: min-content;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 12px;
+}
+.announcement-banner > h2{
+    margin-left: 20%;
+    margin-right: 20%;
+    align-self: center;
+}
+.books-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto
+}
+
+/*shopping game*/
+.board{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.spinner{
+    margin-left: 10%;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
+#main{
+    height: 50%;
+    max-height: 450px;
+    max-width: 50%;
+    overflow: hidden;
+}
+.coins-values{
+    margin-top: 20px;
+}
+.spinning{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all ease 2s;
+}
+.space1{
+    clip-path: polygon(50% 50%, 100% 100%, 0 100%);
+    position: relative;
+    bottom: 203%;
+    left: 0%;
+    
+}
+.space2{
+    clip-path: polygon(50% 50%, 100% 0, 0 0);
+    position: relative;
+    bottom: 305%;
+    left: 0px;
+}
+.space3{
+    clip-path: polygon(50% 50%, 0 100%, 0 0);
+    position: relative;
+    vertical-align: middle;
+    top:0px;
+    left:0px;
+}
+.space4{
+    clip-path: polygon(50% 50%, 100% 100%, 100% 0);
+    position: relative;
+    left:0px;
+    bottom:100%;
+}
+.booklink{
+    color: black;
+}
+.row_div{
+    display: flex;
+    flex-direction: row;
+    
+}
+.book-styles-wrapper{
+    position: relative;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 30%;
+    margin-left: 10px;
+    
+
+}
+#minigame-project{
+    margin-left:10px;
+    
+}
